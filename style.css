@@ -1,0 +1,227 @@
+    /* CSS Reset */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    /* CSS Variables */
+    :root{
+        --navbar-height: 59px;
+    }
+    
+    /* Navigation Bar */
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+    
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 100%;
+        width:100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    
+    /* Navigation Bar: Logo and Image */
+    #logo{
+        margin: 10px 34px;
+    }
+    
+    #logo img{
+        height: 59px;
+        margin: 3px 6px;
+        border-radius: 40px;
+    }
+    
+    
+    /* Navigation Bar: List Styling */
+    
+    #navbar ul{
+        display: flex;
+        font-family: 'Baloo Bhai', cursive;
+    }
+    
+    #navbar ul li{ 
+        list-style: none;
+        font-size: 1.3rem;
+    }
+    
+    #navbar ul li a{
+        color: white;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    
+    #navbar ul li a:hover{
+        color: black;
+        background-color: white;
+    }
+    
+    
+                                                    /* HOME SECTION */
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 544px;
+        align-items: center;
+        justify-content: center;
+    }
+    #home::before{
+        content: "";
+        background:url('bgn1.jpg') no-repeat center center/cover;
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 638px;
+        width:100%;
+        z-index: -1;
+        opacity: 0.9;
+    }
+    
+    #home h1{
+        color: white;
+        text-align: center;
+        font-family: 'Lobster', cursive;
+    }
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: 'Lobster', cursive;
+    
+    }
+    
+                                           /* Services section */
+    
+    #services{
+        margin: 34px;
+        display: flex;
+    }
+    #services .box{
+        border: 2px solid brown;
+        padding: 22px;
+        margin: 3px 6px;
+        border-radius: 18px;
+        background-color: rgb(232, 225, 225);
+    }
+    #services .box img{
+        padding: 1px;
+        height: 80px;
+        display: block;
+        margin: auto;
+    }
+    
+                                 /* Client Section */
+    #client-section{
+        height: 344px;
+        position: relative;
+    }
+    #client-section::before{ 
+        background:url('bgn3.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width:100%;
+        height: 100%
+        
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients img{
+        height: 124px;
+        border-radius: 30px;
+        padding: 2px;
+    }
+    
+    
+                                    /* Contact Section  */
+    #contant{
+        position: relative;
+    }                                
+    #contact::before{
+        content: "";
+        background:url('bgn5.jpg') no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        z-index: -1;
+        opacity: 0.9;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 10px;
+      
+    
+    }
+    #contact-box form{
+        width: 40%;
+    }
+    #contact-box label{
+        font-size: 1.6 rem;
+        font-family: 'Bree Serif' ,'serif';
+        padding: 2px;
+        
+    }
+    
+    
+    footer{
+        background: black;
+        color: white;
+        text-align: center;
+    }
+    
+                                     /* UTILITY CLASSES */
+    .h-primary{
+        
+        font-family: 'Arial Narrow Bold', sans-serif;
+        font-size: 3.3rem;
+        padding: 12px;
+        text-align: center;
+    }
+    .h-secondary{
+        font-family:  Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        padding: 12px;
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: rgb(126, 60, 60);
+        font-size: 1.2rem;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color: blue;
+        background-color: rgb(245, 231, 106);
+        border: 2px solid red;
+    }
+    
+    
